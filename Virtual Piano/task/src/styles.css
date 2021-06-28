@@ -5,6 +5,8 @@ body {
     min-width: 50vw;
     height: 25vh;
     margin: 20vw auto;
+    /*Hacemos el contenedor principal flex
+    y justificamos el contenido al centro y arriba*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -13,9 +15,12 @@ body {
     width: 50px;
     height: 200px;
     background-color: white;
+    /*disponenos los elementos en línea*/
     display: inline-block;
     text-align: center;
     border: 1px solid cadetblue;
+    /*colocamos las letras em la posición que queremos
+    y hacemos que no crezca el contenedor(box-sizing) a cuasa del padding*/
     padding-top: 150px;
     box-sizing: border-box;
 
@@ -23,6 +28,7 @@ body {
 
 .black-keys {
     width: 400px;
+    /*Así las teclas negras se colocan encima de las blancas*/
     position: absolute;
     display: flex;
 }
@@ -35,9 +41,13 @@ body {
     border: 1px solid cadetblue;
     color: antiquewhite;
     z-index: 10;
+    /*colocamos las letras em la posición que queremos
+    y hacemos que no crezca el contenedor(box-sizing) a cuasa del padding*/
     box-sizing: border-box;
     padding-top: 60px;
 }
+/*Movemos las teclas negras con los margenes
+al estar posicionadas de manera absoluta*/
 .black-keys kbd:first-child {
     margin-left: 50px;
 }
